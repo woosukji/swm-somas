@@ -3,35 +3,26 @@
     <v-row class="text-center">
       <v-col cols="12">
         <v-img
-          :src="require('../assets/logo.svg')"
+          :src="require('../assets/SWM_Logos_Color.png')"
           class="my-3"
           contain
-          height="200"
+          height="100"
         />
       </v-col>
 
       <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to Vuetify
-        </h1>
+        <h1 class="display-2 font-weight-bold mb-3">Welcome to SOMA's</h1>
 
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br>please join our online
-          <a
-            href="https://community.vuetifyjs.com"
-            target="_blank"
-          >Discord Community</a>
+        <p class="text-h5 font-weight-bold">
+          우리가 함께 만들어가는 <br />
+          소마 13기의 이야기
         </p>
+
+        <v-btn to="/about">Go!</v-btn>
       </v-col>
 
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-3">
-          What's next?
-        </h2>
+      <v-col class="mb-5" cols="12">
+        <h2 class="headline font-weight-bold mb-3">What's next?</h2>
 
         <v-row justify="center">
           <a
@@ -46,13 +37,8 @@
         </v-row>
       </v-col>
 
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-3">
-          Important Links
-        </h2>
+      <v-col class="mb-5" cols="12">
+        <h2 class="headline font-weight-bold mb-3">Important Links</h2>
 
         <v-row justify="center">
           <a
@@ -67,13 +53,8 @@
         </v-row>
       </v-col>
 
-      <v-col
-        class="mb-5"
-        cols="12"
-      >
-        <h2 class="headline font-weight-bold mb-3">
-          Ecosystem
-        </h2>
+      <v-col class="mb-5" cols="12">
+        <h2 class="headline font-weight-bold mb-3">Ecosystem</h2>
 
         <v-row justify="center">
           <a
