@@ -1,0 +1,32 @@
+name: Build & deploy to GitHub Pages
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+jobs:
+  gh-pages-deploy:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout `main` branch
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+
+      - name: Clean-install dependencies
+        run: |
+          npm ci
+        working-directory: somas
+
+      - name: Run script
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          npm run gh-pages-deploy
+        env:
+          VUE_APP_API_KEY: ${{ secrets.VUE_APP_API_KEY }}
+        working-directory: somas
