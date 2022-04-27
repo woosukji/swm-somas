@@ -2,14 +2,16 @@
   <v-app>
     <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
-        <v-img
-          alt="SWM Logo"
-          class="shrink mr-2"
-          contain
-          src="@/assets/SWM_Logos_White.png"
-          transition="scale-transition"
-          width="100"
-        />
+        <router-link to="/">
+          <v-img
+            alt="SWM Logo"
+            class="shrink mr-2"
+            contain
+            src="@/assets/SWM_Logos_White.png"
+            transition="scale-transition"
+            width="100"
+          />
+        </router-link>
       </div>
 
       <v-spacer></v-spacer>
