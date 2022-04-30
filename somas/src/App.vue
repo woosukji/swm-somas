@@ -26,7 +26,7 @@
       </v-btn>
     </v-app-bar>
 
-    <v-main>
+    <v-main id="main">
       <router-view />
     </v-main>
   </v-app>
@@ -41,3 +41,15 @@ export default {
   }),
 };
 </script>
+
+<style lang="scss">
+#main {
+  justify-content: center;
+  > div {
+    background-color: gray;
+    display: flex;
+    flex: 0 1 480px;
+    justify-content: center;
+  }
+}
+</style>
